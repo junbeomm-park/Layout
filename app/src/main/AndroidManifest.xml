@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Layout">
-        <activity android:name=".AddViewTestActivity">
+        <activity android:name=".FrameLayoutExamActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".LayoutTestActivity" />
+        <activity android:name=".AddViewTestActivity" />
     </application>
 
 </manifest>

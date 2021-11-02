@@ -25,10 +25,30 @@ public class FrameLayoutExamActivity extends AppCompatActivity {
 
     }
 
-    //버튼이 클릭될 때 호출되는 메소드
+    public void run_click(View v) {
+        Log.d("view", v.toString());
+        if (v.getId() == R.id.loginclick) {
+            img1.setVisibility(View.VISIBLE);
+            img2.setVisibility(View.INVISIBLE);
+            img3.setVisibility(View.INVISIBLE);
+        } else if (v.getId() == R.id.signclick) {
+            img1.setVisibility(View.INVISIBLE);
+            img2.setVisibility(View.VISIBLE);
+            img3.setVisibility(View.INVISIBLE);
+        } else if (v.getId() == R.id.detailclick) {
+            img1.setVisibility(View.INVISIBLE);
+            img2.setVisibility(View.INVISIBLE);
+            img3.setVisibility(View.VISIBLE);
+    }
+}
+}
+    /*//버튼이 클릭될 때 호출되는 메소드
     public void loginclick(View v) {
         imagechange();
     }
+
+
+
 
     //버튼을 선택할때마다 이미지가 교체되어 보이도록 구현
     public void imagechange() {
@@ -74,5 +94,5 @@ public class FrameLayoutExamActivity extends AppCompatActivity {
                 index = 1;
 
             }
-        }
+        }*/
 

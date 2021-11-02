@@ -10,26 +10,29 @@
         android:background="#FFEB3B"
         >
         <Button
+            android:id="@+id/loginclick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#9C9696"
             android:text="로그인"
-            android:onClick="loginclick"/>
+            android:onClick="run_click"/>
         <Button
+            android:id="@+id/signclick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#9C9696"
             android:text="회원가입"
-            android:onClick="signclick"/>
+            android:onClick="run_click"/>
         <Button
+            android:id="@+id/detailclick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#9C9696"
             android:text="상세정보"
-            android:onClick="detailclick"/>
+            android:onClick="run_click"/>
 
     </LinearLayout>
     <FrameLayout
